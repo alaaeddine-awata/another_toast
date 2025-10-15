@@ -1,15 +1,49 @@
-# another_toast
+# Another Toast (Flutter Plugin)
 
-A new Flutter plugin project.
+A simple Flutter plugin to show native Android Toast messages with customizable text, color, and position (top, center, bottom).
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/to/develop-plugins),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+## 🧩 Supported Platform
+- ✅ Android  
+- ❌ iOS (coming soon)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
 
+## 🚀 Installation
+
+Add this to your pubspec.yaml:
+
+```yaml
+dependencies:
+  another_toast:
+    git:
+      url: https://github.com/alaaeddine-awata/another_toast.git
+```
+
+Then run:
+```
+flutter pub get
+```
+---
+
+💬 Usage
+
+```dart
+import 'package:another_toast/another_toast.dart';
+
+AnotherToast.showToast(
+  message: "Hello from Another Toast 👋🏻",
+  backgroundColor: "#000000",
+  textColor: "#FFFFFF",
+  fontSize: 18,
+  radius: 20,
+  length: ToastLength.long,
+  gravity: ToastGravity.center,
+);
+```
+
+
+---
+
+Made with ❤️ using Flutter + Kotlin
